@@ -1,0 +1,1 @@
+Hello my friend, from index.php page!!!

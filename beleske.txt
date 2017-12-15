@@ -1,0 +1,12 @@
+path %path%;C:\wamp64\bin\php\php7.0.10
+cd C:\wamp64\www\itakademija\mn
+
+
+path %path%;C:\wamp64\bin\php\php7.0.10
+cd C:\wamp64\www\mn
+
+
+///////////////////////////////////////////////////////
+https://vmaric@bitbucket.org/vmaric/phpex.git
+
+git clone https://bitbucket.org/vmaric/phpex.git

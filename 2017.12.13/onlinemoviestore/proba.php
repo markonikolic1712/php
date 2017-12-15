@@ -1,5 +1,6 @@
 <?php
-function vreme(){
-  echo date("H:i");
-}
+include "lib.php";
 
+//vreme();
+
+categories();

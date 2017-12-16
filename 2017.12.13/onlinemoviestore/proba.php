@@ -3,4 +3,5 @@ include "lib.php";
 
 //vreme();
 
-categories();
+categories($cats, $movies);
+

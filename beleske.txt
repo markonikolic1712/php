@@ -10,3 +10,6 @@ cd C:\wamp64\www\mn
 https://vmaric@bitbucket.org/vmaric/phpex.git
 
 git clone https://bitbucket.org/vmaric/phpex.git
+
+
+git clone https://github.com/markonikolic1712/php.git

@@ -1,6 +1,5 @@
 <?php
 include "lib.php";
-include "lib.php";
 
 //vreme();
 

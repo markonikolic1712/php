@@ -7,6 +7,8 @@ define("COORDINATOR",	8);
 
 $user_status = SUPPORT;
 
+
+/////
 $zone	= SUPPORT | COORDINATOR;
 
 printf("_%b", SUPPORT);

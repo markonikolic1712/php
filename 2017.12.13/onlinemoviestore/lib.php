@@ -1,6 +1,7 @@
 <?php
 require_once "model.php";
 
+
 function vreme(){
 	echo date("Y M H:i:s");
 }

@@ -6,6 +6,13 @@ $heroesRaw = array(
 	array("Valla",25,"http://us.battle.net/heroes/static/images/heroes/busts/valla.jpg")
 );
 
+foreach($heroesRaw as $key=>$heroj){
+	rsort($heroj);
+	foreach($heroj as $v){
+		print_r($v);
+		echo "<div style='width:200px;float:left;margin-right:10px;'><img src='".$v[0]."'><br>Name: ".$v[2]."<br>Grade: ".$v[1]."<br></div>";
+	}
+}
 
 
 
@@ -14,5 +21,3 @@ $heroesRaw = array(
 
 
 
-
-echo "<div style='width:200px;float:left;margin-right:10px;'><img src='{}'><br>Name:{} <br>Grade: { }<br></div>";

@@ -32,8 +32,10 @@ function showOdds($odds){
 		echo "</div>";
 	}
 } 
+
 $oddSet = setOdds($oddsReceived);  
 showOdds($oddSet); 
+
 
 
  

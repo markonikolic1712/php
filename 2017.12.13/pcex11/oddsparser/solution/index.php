@@ -18,7 +18,7 @@ function setHandicaps(&$odds){
 	
 } 
 setHandicaps($odds); 
-
+print_r($odds);
 foreach($odds as $matchTeams=>$matchOdds){
 	echo "<div style='border:1px solid red;padding:4px;margin:4px;'><strong>{$matchTeams}</strong><br>";
 	echo "<div style='float:left;width:50px;'>HC</div>";

@@ -5,4 +5,14 @@ $newsModel = [
 	["title"=>"Beckham warning for England","text"=>"David Beckham believes there will be no easy games for England in the World Cup despite their apparent good draw."]
 ];
 
-/* YOUR CODE HERE */
+function vest($arr){
+	$i = rand(0,count($arr)-1);
+	$vest = $arr[$i];
+	echo "<div style='border: 1px solid red; padding:0 30px;float:left;'>
+			<h2>{$arr[$i]['title']}</h2>
+			<p>{$arr[$i]['text']}</p>
+		</div>";
+}
+
+
+vest($newsModel);

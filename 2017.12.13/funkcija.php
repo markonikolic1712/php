@@ -1,6 +1,9 @@
 <?php
-function hello($unos){
-	echo $unos;
+function hello(&$unos){
+	$unos .= 'mmmm';
+	return $unos;
 }
-
-hello('Marko');
+$a = 'Marko';
+echo $a."<hr>";
+echo hello($a);
+echo $a;

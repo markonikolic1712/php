@@ -7,7 +7,7 @@
 		"Science fiction"
 	];
 
-		$movies = [
+	$movies = [
 		[
 			"titles" => "Star Wars Trilogy (Widescreen Edition)",
 			"images" => "images/photo_1.jpg",

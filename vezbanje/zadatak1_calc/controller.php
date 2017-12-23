@@ -1,5 +1,8 @@
 <?php
-
+$x = '';
+$y = '';
+$o = '';
+$rezultat = '';
 
 function calc($x, $y, $operacija){
 	switch($operacija){

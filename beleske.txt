@@ -5,6 +5,9 @@ cd C:\wamp64\www\itakademija\mn
 path %path%;C:\wamp64\bin\php\php7.0.10
 cd C:\wamp64\www\mn
 
+C:\wamp64\bin\mysql\mysql5.7.14\bin
+
+
 
 ///////////////////////////////////////////////////////
 https://vmaric@bitbucket.org/vmaric/phpex.git

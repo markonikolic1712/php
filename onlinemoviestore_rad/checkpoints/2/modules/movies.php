@@ -1,10 +1,10 @@
 <?php
-$category = 1;
-
-$q = mysqli_query($conn, "select * from movies where category = $category");
+$conn = mysqli_connect("localhost","root","","moviestore");
+$q = mysqli_query($conn, "select * from movies");
 $i=1;
 while($rw=mysqli_fetch_object($q)){
-		$i++;
+	$i++;
+
 ?>
         <div class="<?php echo ($i+1)%2==0 ? "rightbox":"leftbox"; ?>">
           <h3><?php echo $rw->title; ?></h3>

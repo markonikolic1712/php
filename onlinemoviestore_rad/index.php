@@ -24,7 +24,7 @@ $conn = mysqli_connect("localhost","root","","moviestore");
       $q = mysqli_query($conn, "select * from categories");
       while($rw = mysqli_fetch_object($q)){
         ?>
-      <dd><a href="http://www.free-css.com/"><?php echo $rw->name ?></a></dd>      
+      <dd><a href="index.php?cid=<?php $rw->id ?>"><?php echo $rw->name ?></a></dd>      
       <?php
       }
       ?>

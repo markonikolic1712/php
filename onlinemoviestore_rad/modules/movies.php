@@ -1,6 +1,5 @@
 <?php
-$category = 1;
-
+$category = isset($_GET['cid'])&&is_numeric($_GET['cid'])?$_GET['cid']:0;
 $q = mysqli_query($conn, "select * from movies where category = $category");
 $i=1;
 while($rw=mysqli_fetch_object($q)){

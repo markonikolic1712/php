@@ -3,7 +3,7 @@ require "../config.php";
 $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DB);
 $selected_id = -1;
 $selected_name = "";
-$seleted_description = "";
+$selected_description = "";
 
 if(isset($_GET['cid'])){
 	$q = mysqli_query($conn, "select * from categories where id = {$_GET['cid']}");
@@ -18,8 +18,15 @@ if(isset($_GET['cid'])){
 if(isset($_POST['btn_insert'])){
 	$selected_name = $_POST['tb_name'];
 	$selected_description = $_POST['tb_description'];
-	mysqli_query("insert into categories values (null, '{$selected_name}', '{$selected_description}')");
+	mysqli_query($conn, "insert into categories values (null, '{$selected_name}','{$selected_description}')");
 	$selected_id = mysqli_insert_id($conn);
+	}
+
+if(isset($_POST['btn_update'])){
+	$selected_name = $_POST['tb_name'];
+	$selected_description = $_POST['tb_description'];
+	$selected_id = $_POST['selCategory'];
+	mysqli_query($conn, "update categories set name='{$selected_name}',description='{$selected_description}' where id={$selected_id}");
 	}
 ?>
 Categories
@@ -40,9 +47,9 @@ Name:<br>
 <input type="text" name="tb_name" value="<?php echo $selected_name; ?>">
 <br>
 Description:<br>
-<input type="text" name="tb_description" value="<?php echo $selected_description; ?>">
+<input type="text" name="tb_description" value="<?php echo $selected_description; ?>" />
 <br><br>
-<input type="submit" name="btn_insert" value="Add new">
-<input type="submit" name="btn_update" value="Update">
-<input type="submit" name="btn_delete" value="Delete">
+<input type="submit" name="btn_insert" value="Add new" />
+<input type="submit" name="btn_update" value="Update" />
+<input type="submit" name="btn_delete" value="Delete" />
 </form>

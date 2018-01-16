@@ -5,20 +5,16 @@
 $niz=[];
 for($n=0; $n<6;$n++){
 	while(true){
-		$broj[$n] = rand(1,10); 
-		for($k=0; $k<$n; $k++){
-			if($broj[$n]==$broj[$k]){
-				continue(2);
-			}
-		}
+		$broj[$n] = rand(1,7); 
+				for($k=0; $k<$n; $k++){
+						if($broj[$n]==$broj[$k]){
+							continue(2);
+						}
+				}
 		$niz[$n] = $broj[$k];
 		break;
 	}
 }
-
-
-
-
 
 do{
 	$zamena = false;

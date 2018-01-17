@@ -32,6 +32,7 @@ class Match {
 	}
 }
 
+
 $m = new Match(
 	new Team("Moviestar riders","https://static.hltv.org/images/bigflags/30x20/RU.gif"),
 	new Team("Ryzen","https://static.hltv.org/images/bigflags/30x20/RS.gif"),
@@ -39,6 +40,9 @@ $m = new Match(
 );
 
 $m->Show();
+
+
+
 
 
 

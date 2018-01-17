@@ -26,6 +26,6 @@ class User {
 }
 
 $u = new User("Uros", "Todorovic",15);
-echo $u->isUnderage
+$u->show();
 
 
